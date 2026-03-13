@@ -1,0 +1,66 @@
+.app-download {
+  padding: 100px 5%;
+  background-color: #000000; /* Pure Black Background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #222; /* Subtle separation */
+}
+
+.app-container {
+  max-width: 850px;
+  width: 100%;
+}
+
+.app-content {
+  text-align: center;
+}
+
+.app-content h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff; /* White text for black background */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.app-content h2 span {
+  color: #ff4757; /* Keep the brand Red */
+}
+
+.app-content p {
+  font-size: 1.2rem;
+  color: #a0a0a0; /* Soft gray for the description */
+  margin-bottom: 45px;
+  line-height: 1.6;
+}
+
+.download-platforms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.store-link img {
+  height: 60px;
+  border: 1px solid #333; /* Adds a subtle border to the buttons */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.store-link img:hover {
+  transform: translateY(-8px);
+  border-color: #ff4757; /* Border turns red on hover */
+  box-shadow: 0 10px 20px rgba(255, 71, 87, 0.2);
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .app-content h2 {
+    font-size: 2.4rem;
+  }
+  .download-platforms {
+    flex-direction: column;
+    align-items: center;
+  }
+}

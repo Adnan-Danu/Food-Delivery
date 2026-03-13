@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px); /* Glass effect */
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3436;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo-icon { font-size: 1.8rem; }
+.logo-text { color: #ff4757; }
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #636e72;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ff4757;
+}
+
+/* Subtle underline on hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff4757;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Right Side Actions */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Auth section for logged-out users */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.login-link {
+  font-weight: 600;
+  color: #2d3436;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #2d3436; /* Dark button for contrast */
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #ff4757;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+}
+
+/* User section for logged-in users */
+.user-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Cart Icon Badge */
+.cart-icon-wrapper {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.cart-icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff4757;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+/* ===== LOGOUT BUTTON STYLING ===== */
+.logout-btn {
+  background: transparent;
+  color: #636e72;
+  border: 2px solid #e1e1e1;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Add a logout icon using pseudo-element */
+.logout-btn::before {
+  content: '🚪';
+  font-size: 1rem;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff4757;
+  color: white;
+  border-color: #ff4757;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 71, 87, 0.2);
+}
+
+.logout-btn:hover::before {
+  transform: translateX(3px); /* Door icon slides right on hover */
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Alternative logout button style - more subtle */
+.logout-btn-subtle {
+  background: transparent;
+  color: #ff4757;
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.logout-btn-subtle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ff4757;
+  transition: width 0.3s ease;
+}
+
+.logout-btn-subtle:hover::after {
+  width: 80%;
+}
+
+.logout-btn-subtle:hover {
+  color: #ff4757;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .nav-container {
+    width: 95%;
+  }
+
+  .nav-links {
+    display: none; 
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .auth-links {
+    gap: 8px;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .signup-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .cart-icon-wrapper {
+    font-size: 1.4rem;
+  }
+
+  /* Logout button mobile styles */
+  .logout-btn {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+  }
+
+  .logout-btn::before {
+    font-size: 0.9rem;
+  }
+
+  .user-nav-section {
+    gap: 12px;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .auth-links .nav-link {
+    display: none; 
+  }
+  
+  .nav-right {
+    gap: 10px;
+  }
+
+  /* Hide logout text on very small screens, show only icon */
+  .logout-btn {
+    padding: 8px;
+    font-size: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logout-btn::before {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  /* Make cart icon slightly smaller */
+  .cart-icon-wrapper {
+    font-size: 1.3rem;
+  }
+}
+
+/* Animation for logout button */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logout-btn:active::before {
+  animation: slideOut 0.3s ease;
+}
+/* Add to your Navbar.css */
+.welcome-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2d3436;
+  margin-right: 5px;
+  padding: 5px 10px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    display: none; /* Hide on mobile to save space */
+  }
+}
+
+/* Add/update these styles in your Navbar.css */
+
+.user-nav-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5px 15px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+.welcome-text {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.user-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+}
+
+/* Alternative style if you prefer something simpler */
+.user-info-simple {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  background: #f0f2f5;
+  border-radius: 30px;
+  color: #2d3436;
+  border: 1px solid #e1e1e1;
+}
+
+.user-info-simple .user-name {
+  color: #ff4757;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .user-info {
+    padding: 4px 10px;
+  }
+  
+  .welcome-text {
+    display: none; /* Hide "Welcome," text on mobile */
+  }
+  
+  .user-name {
+    font-size: 0.85rem;
+  }
+  
+  .user-nav-section {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-info {
+    display: none; /* Hide user name on very small screens, keep only cart and logout */
+  }
+}
+/* Active state for nav links */
+.nav-link.active {
+  color: #ff4757;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Optional: Add a nice transition */
+.nav-link {
+  transition: color 0.3s ease;
+}

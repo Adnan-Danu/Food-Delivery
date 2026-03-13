@@ -1,0 +1,28 @@
+[
+  { "id": "1", "name": "Spicy Arrabiata Pasta", "category": "food", "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg", "price": 12.99, "quantity": 0 },
+  { "id": "2", "name": "Grilled Salmon", "category": "food", "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg", "price": 18.50, "quantity": 0 },
+  { "id": "3", "name": "Cheesy Margherita Pizza", "category": "food", "image": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg", "price": 10.00, "quantity": 0 },
+  { "id": "4", "name": "Chicken Burger", "category": "food", "image": "https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg", "price": 8.99, "quantity": 0 },
+  { "id": "5", "name": "Beef Steak with Veggies", "category": "food", "image": "https://www.themealdb.com/images/media/meals/1520084413.jpg", "price": 24.99, "quantity": 0 },
+  { "id": "6", "name": "Chocolate Lava Cake", "category": "food", "image": "https://www.themealdb.com/images/media/meals/twspvx1511784937.jpg", "price": 6.99, "quantity": 0 },
+  { "id": "7", "name": "Crispy Fish & Chips", "category": "food", "image": "https://www.themealdb.com/images/media/meals/ysqupp1511640538.jpg", "price": 14.50, "quantity": 0 },
+  { "id": "8", "name": "Classic Beef Tacos", "category": "food", "image": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg", "price": 11.25, "quantity": 0 },
+
+  { "id": "d1", "name": "Fresh Mint Mojito", "category": "drink", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500", "price": 5.50, "quantity": 0 },
+  { "id": "d2", "name": "Iced Berry Lemonade", "category": "drink", "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500", "price": 4.99, "quantity": 0 },
+  { "id": "d3", "name": "Classic Coca Cola", "category": "drink", "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500", "price": 2.50, "quantity": 0 },
+  { "id": "d4", "name": "Mango Tango Smoothie", "category": "drink", "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847?w=500", "price": 6.50, "quantity": 0 },
+  { "id": "d5", "name": "Iced Caramel Macchiato", "category": "drink", "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500", "price": 5.25, "quantity": 0 },
+  { "id": "d6", "name": "Sparkling Orange Soda", "category": "drink", "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500", "price": 3.99, "quantity": 0 },
+  { "id": "d7", "name": "Blueberry Mocktail", "category": "drink", "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500", "price": 6.25, "quantity": 0 },
+  { "id": "d8", "name": "Tropical Pineapple Juice", "category": "drink", "image": "https://thumbs.dreamstime.com/b/pineapple-juice-glass-fresh-fruits-38687872.jpg?w=500", "price": 4.50, "quantity": 0 },
+
+  { "id": "s1", "name": "Garlic Aioli Dip", "category": "dip", "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500", "price": 1.50, "quantity": 0 },
+  { "id": "s2", "name": "Spicy Peri-Peri", "category": "dip", "image": "https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=500", "price": 1.50, "quantity": 0 },
+  { "id": "s3", "name": "Creamy Cheese Dip", "category": "dip", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-OigI0oceuWEtLwDJEdSzRlf_OJBKqZFKQ&s?w=500", "price": 2.00, "quantity": 0 },
+  { "id": "s4", "name": "Honey Mustard", "category": "dip", "image": "https://www.allrecipes.com/thmb/XQYrRNGt0RwEhbgFHYHfBU63VgE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/16129-honey-mustard-dressing-DDMFS-beauty-4x3-BG-1437-cf20861791ad45f19b874b079e4cd3cb.jpg?w=500", "price": 1.50, "quantity": 0 },
+  { "id": "s5", "name": "Barbecue Smokey", "category": "dip", "image": "https://media.istockphoto.com/id/520421898/photo/beef-steaks-on-the-grill.jpg?s=612x612&w=0&k=20&c=x66gAivz2_zG-E-I963_VwySZQrNHXjD2Q0PW3NXeL4=", "price": 1.25, "quantity": 0 },
+  { "id": "s6", "name": "Sweet Chili Sauce", "category": "dip", "image": "https://kame.com/cdn/shop/products/SweetChiliSauce_1.jpg?v=1680195254", "price": 1.50, "quantity": 0 },
+  { "id": "s7", "name": "Truffle Mayo", "category": "dip", "image": "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500", "price": 2.50, "quantity": 0 },
+  { "id": "s8", "name": "Ranch Dressing", "category": "dip", "image": "https://www.inspiredtaste.net/wp-content/uploads/2021/06/Homemade-Ranch-Dressing-Recipe-1200.jpg", "price": 1.75, "quantity": 0 }
+]

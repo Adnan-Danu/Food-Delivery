@@ -1,0 +1,77 @@
+.hero {
+  height: 70vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1470&q=80")
+      center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #ff1a1a;
+}
+/* --- HERO RESPONSIVENESS --- */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* Slightly shorter on tablets */
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem; /* Scaled down from 3rem */
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Scaled down from 1.2rem */
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-btn {
+    padding: 0.7rem 1.5rem;
+    width: 80%; /* Wider button for easier tapping on mobile */
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh; /* Compact height for small phones */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}
