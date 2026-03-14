@@ -3,7 +3,7 @@
 A full-stack food delivery application built with React.js and Node.js. Users can browse dishes, add them to cart, and place orders. Features user authentication with persistent cart storage per user.
 
 ![Food Delivery App Screenshot](https://github.com/Adnan-Danu/Food-Delivery/blob/master/image.png)
-(https://github.com/Adnan-Danu/Food-Delivery/blob/master/Screenshot_13-3-2026_144515_localhost.jpeg)
+![Screenshot](https://github.com/Adnan-Danu/Food-Delivery/raw/master/Screenshot_13-3-2026_144515_localhost.jpeg)
 
 ## ✨ Features
 
